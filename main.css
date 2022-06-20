@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Inter';
 }
 
 .container {
@@ -8,6 +9,12 @@ body {
 }
 
 /* первый блок */
+
+.header {
+    padding-bottom: 145px;
+}
+
+.hero {}
 
 .hero::before {
     content: " ";
@@ -36,7 +43,6 @@ nav {
 
 ul {
     display: flex;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 18px;
     text-transform: lowercase;
@@ -62,7 +68,6 @@ li {
 }
 
 h1 {
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 64px;
     line-height: 100%;
@@ -70,7 +75,6 @@ h1 {
 }
 
 .head-subtitle {
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 18px;
     text-transform: capitalize;
@@ -88,7 +92,6 @@ button {
     background: #8EADD5;
     border-radius: 8px;
     margin-top: 39px;
-    font-family: 'Inter';
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
@@ -109,7 +112,6 @@ button {
 
 .social-post {
     text-align: center;
-    font-family: 'Inter';
     font-weight: 300;
     font-size: 16px;
     text-transform: capitalize;
@@ -131,6 +133,8 @@ button {
 }
 
 
+/* можно так, но лучше использовать классы
+
 .social-pages img:nth-of-type(1n) {
     width: 140px;
     height: 48px;
@@ -148,6 +152,27 @@ button {
 }
 
 .social-pages img:nth-of-type(4n) {
+    width: 98px;
+    height: 48px;
+} */
+
+.spotify {
+    width: 140px;
+    height: 48px;
+
+}
+
+.slack {
+    width: 121px;
+    height: 48px;
+}
+
+.dropbox {
+    width: 163px;
+    height: 48px;
+}
+
+.zoom {
     width: 98px;
     height: 48px;
 }
