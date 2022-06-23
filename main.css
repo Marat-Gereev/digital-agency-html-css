@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Inter';
+    background-color: #FDFCFC;
 }
 
 .container {
@@ -32,13 +33,11 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
     height: 28px;
     padding-top: 46px;
-
 }
 
 ul {
@@ -64,7 +63,6 @@ li {
 
 .head-title {
     width: 540px;
-
 }
 
 h1 {
@@ -129,7 +127,6 @@ button {
     top: 810px;
     background-color: #F6F6F6;
     border-radius: 8px;
-
 }
 
 
@@ -159,7 +156,6 @@ button {
 .spotify {
     width: 140px;
     height: 48px;
-
 }
 
 .slack {
@@ -175,4 +171,201 @@ button {
 .zoom {
     width: 98px;
     height: 48px;
+}
+
+/* второй блок */
+
+.team-working {
+    display: flex;
+    height: 450px;
+    padding-bottom: 140px;
+}
+
+.team-working::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 250px;
+    right: -45%;
+    top: 170%;
+    background: rgba(142, 173, 213, 1);
+    filter: blur(18px);
+}
+
+.post-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #272D38;
+    width: 435px;
+    height: 100px;
+    margin: 95px 0 26px 180px;
+}
+
+.post-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+    width: 392px;
+    margin: 0 0 46px 180px;
+}
+
+.arrow {
+    margin: 0 0 0 180px;
+}
+
+/* третий блок */
+
+.team-business {
+    display: flex;
+    height: 450px;
+    padding-bottom: 140px;
+}
+
+
+.business-analyz {
+    margin: 95px 180px 26px 0;
+}
+
+.business-subs {
+    margin: 0 180px 46px 0;
+}
+
+/* четвертый блок */
+.testimonials {
+    height: 515px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 136px;
+}
+
+.testimonials-titles {
+    width: 100%;
+}
+
+.testimonials-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+.testimonials-subtitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: capitalize;
+    margin: 16px 0 38px 0;
+}
+
+.post-persons {
+    width: 345px;
+    height: 334px;
+    left: 188px;
+    top: 2385px;
+    background: #F6F6F6;
+    border-radius: 20px;
+}
+
+.andrew-img {
+    margin: 32px 108px 8px 108px;
+}
+
+.andrew-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+.andrew-post {
+    width: 281px;
+    margin: 27px 32px 32px 32px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+
+.person-dunkan {
+    margin: 0 15px 0 15px;
+}
+
+/* пятый блок */
+
+.customers {
+    display: flex;
+    width: 1065px;
+    height: 450.43px;
+    left: 188px;
+    top: 2855px;
+    background: #F6F6F6;
+    border-radius: 20px;
+    margin-bottom: 139px;
+}
+
+.customer-support {
+    margin: 0 90px 0 76px;
+}
+
+.custom-title {
+    margin: 100px 89px 16px 0;
+}
+
+.custom-subtitle {
+    margin: 0 16px 0 0;
+}
+
+.customers-contact {
+    margin: 32px 283px 0 0;
+}
+
+/* шестой блок футер */
+
+.footer {
+    height: 500px;
+    top: 3444px;
+    background: #F6F6F6;
+
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    width: 190px;
+}
+
+.footer-titles {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    margin: 105px 0 40px 0;
+}
+
+.footer-subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.footer-title {
+    margin-bottom: 32px;
+}
+
+a {
+    display: block;
+    margin-bottom: 26px;
+}
+
+.footer-bot {
+    text-align: center;
+    margin: 110px 0 10px 0;
 }
