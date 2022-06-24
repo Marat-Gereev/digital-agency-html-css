@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Inter';
     background-color: #FDFCFC;
+    overflow-x: hidden;
 }
 
 .container {
@@ -15,7 +16,13 @@ body {
     padding-bottom: 145px;
 }
 
-.hero {}
+nav a {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: lowercase;
+    color: #272D38;
+    text-decoration: none;
+}
 
 .hero::before {
     content: " ";
@@ -177,20 +184,21 @@ button {
 
 .team-working {
     display: flex;
-    height: 450px;
     padding-bottom: 140px;
+    justify-content: space-between;
 }
 
 .team-working::after {
     content: " ";
     position: absolute;
     display: block;
-    width: 250px;
-    height: 250px;
-    right: -45%;
-    top: 170%;
-    background: rgba(142, 173, 213, 1);
-    filter: blur(18px);
+    width: 500px;
+    height: 500px;
+    right: -21%;
+    top: 137%;
+    background: rgba(142, 173, 213, 0.3);
+    filter: blur(100px);
+    border-radius: 100%;
 }
 
 .post-title {
@@ -201,7 +209,7 @@ button {
     color: #272D38;
     width: 435px;
     height: 100px;
-    margin: 95px 0 26px 180px;
+    margin: 95px 0 26px 0;
 }
 
 .post-subtitle {
@@ -210,19 +218,13 @@ button {
     line-height: 28px;
     text-transform: capitalize;
     width: 392px;
-    margin: 0 0 46px 180px;
-}
-
-.arrow {
-    margin: 0 0 0 180px;
+    margin-bottom: 46px;
 }
 
 /* третий блок */
 
-.team-business {
-    display: flex;
-    height: 450px;
-    padding-bottom: 140px;
+.team-working.reverse {
+    flex-direction: row-reverse;
 }
 
 
@@ -236,11 +238,11 @@ button {
 
 /* четвертый блок */
 .testimonials {
-    height: 515px;
+    justify-content: space-between;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 136px;
+    padding-bottom: 180px;
 }
 
 .testimonials-titles {
@@ -263,10 +265,7 @@ button {
 }
 
 .post-persons {
-    width: 345px;
-    height: 334px;
-    left: 188px;
-    top: 2385px;
+    flex: 0 0 30%;
     background: #F6F6F6;
     border-radius: 20px;
 }
@@ -283,7 +282,6 @@ button {
 }
 
 .andrew-post {
-    width: 281px;
     margin: 27px 32px 32px 32px;
     font-weight: 300;
     font-size: 14px;
@@ -291,18 +289,11 @@ button {
     text-transform: capitalize;
 }
 
-.person-dunkan {
-    margin: 0 15px 0 15px;
-}
 
 /* пятый блок */
 
 .customers {
     display: flex;
-    width: 1065px;
-    height: 450.43px;
-    left: 188px;
-    top: 2855px;
     background: #F6F6F6;
     border-radius: 20px;
     margin-bottom: 139px;
@@ -317,7 +308,12 @@ button {
 }
 
 .custom-subtitle {
-    margin: 0 16px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+    width: 392px;
+    margin: 0 180px 46px 0;
 }
 
 .customers-contact {
@@ -342,7 +338,7 @@ button {
     width: 190px;
 }
 
-.footer-titles {
+.footer-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
@@ -350,20 +346,16 @@ button {
     margin: 105px 0 40px 0;
 }
 
-.footer-subtitle {
+.footer-items a {
     font-weight: 300;
     font-size: 16px;
     text-transform: capitalize;
-}
-
-.footer-title {
-    margin-bottom: 32px;
-}
-
-a {
+    color: #272D38;
+    text-decoration: none;
     display: block;
     margin-bottom: 26px;
 }
+
 
 .footer-bot {
     text-align: center;
