@@ -21,7 +21,7 @@ img {
 }
 
 .hero {
-    padding-bottom: 145px !important;
+    padding-bottom: 145px;
 }
 
 nav a {
@@ -195,6 +195,7 @@ button {
     content: " ";
     position: absolute;
     display: block;
+    z-index: 1;
     width: 500px;
     height: 500px;
     right: -21%;
@@ -210,7 +211,7 @@ button {
     line-height: 100%;
     text-transform: capitalize;
     color: #272D38;
-    margin: 95px 0 26px 180px;
+    margin: 95px 0 26px 0;
 }
 
 .post-subtitle {
@@ -218,12 +219,10 @@ button {
     font-size: 16px;
     line-height: 28px;
     text-transform: capitalize;
-    margin: 0 0 46px 180px;
+    margin: 0 0 46px 0;
 }
 
-.arrow {
-    margin: 0 0 0 180px;
-}
+.arrow {}
 
 /* третий блок */
 
@@ -231,14 +230,10 @@ button {
     flex-direction: row-reverse;
 }
 
-
-.business-analyz {
-    margin: 95px 180px 26px 0;
+.team-working-text {
+    max-width: 435px;
 }
 
-.business-subs {
-    margin: 0 180px 46px 0;
-}
 
 /* четвертый блок */
 .testimonials {
@@ -275,7 +270,7 @@ button {
 }
 
 .andrew-img {
-    margin: 32px 108px 8px 108px;
+    margin: 48px 0 48px 0;
 }
 
 .andrew-title {
@@ -328,7 +323,7 @@ button {
 /* шестой блок футер */
 
 .footer {
-    height: 500px;
+    height: 100%;
     top: 3444px;
     background: #F6F6F6;
 
@@ -385,16 +380,10 @@ button {
     }
 
     .hero::before {
-        content: " ";
-        position: absolute;
-        z-index: 1;
-        display: block;
         width: 500px;
         height: 500px;
         left: -88%;
         top: -37%;
-        background: rgba(142, 173, 213, 1);
-        filter: blur(306px);
     }
 
     .head-titles {
@@ -408,8 +397,9 @@ button {
         width: auto;
     }
 
-    .head-titles {
-        align-items: center;
+    .head-titles button {
+        display: block;
+        margin-bottom: 48px;
     }
 
     .head-subtitle {
@@ -419,13 +409,12 @@ button {
         margin-bottom: 34px;
     }
 
+
+
     button {
-        display: block;
         margin: 0 auto;
         line-height: normal;
         font-size: 14px;
-        padding: 10px 24px;
-        margin-bottom: 48px;
     }
 
     .business-people {
@@ -438,7 +427,7 @@ button {
     }
 
     img {
-        max-width: 100%;
+        max-width: 70%;
     }
 
     .social-pages div {
@@ -448,10 +437,15 @@ button {
     }
 
     .team-working {
-        flex-direction: column-reverse !important;
+        flex-direction: column-reverse;
         text-align: center;
         align-content: center;
     }
+
+    .team-working.reverse {
+        flex-direction: column-reverse;
+    }
+
 
     .arrow {
         transform: rotate(90.1deg);
@@ -474,16 +468,11 @@ button {
 
 
     .team-working::after {
-        content: " ";
-        position: absolute;
-        display: block;
+
         width: 500px;
         height: 500px;
         right: -46%;
         top: 189%;
-        background: rgba(142, 173, 213, 0.3);
-        filter: blur(100px);
-        border-radius: 100%;
     }
 
 
@@ -515,6 +504,11 @@ button {
         width: 40%;
     }
 
+    .customers div {
+        align-items: center;
+    }
+
+
 
     .custom-subtitle {
         width: 100%;
@@ -525,7 +519,11 @@ button {
     }
 
     .customers-contact {
-        margin: 48px 0 48px 71px;
+        display: block;
+        margin: 0 auto;
+        line-height: normal;
+        font-size: 14px;
+        margin-bottom: 48px;
         padding: 12px 34px 12px 34px;
     }
 
@@ -533,9 +531,6 @@ button {
         display: none;
     }
 
-    .footer {
-        height: 100%;
-    }
 
     .footer-items {
         flex-direction: column;
